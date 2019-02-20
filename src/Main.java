@@ -81,7 +81,7 @@ public class Main {
     public static void main(String[] args) {
 
         String startString = new String("Type math expression ('a+b', 'a-b', 'a*b', 'a/b') or 'exit':");
-        String exitString = new String("exit");
+        String exitString = new String("EXIT");
         String exitingString = new String("Exiting...");
         String wrongString = new String("Wrong statement");
         String resultString = new String("Result:");
