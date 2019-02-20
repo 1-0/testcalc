@@ -1,7 +1,19 @@
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
         String startString = new String("Type math expression ('a + b', 'a-b', 'a * b', 'a / b') or 'exit':");
-        System.out.println(startString);
+        String exitString = new String("exit");
+        String exitingString = new String("Exiting...");
+        while (true) {
+            System.out.println(startString);
+            Scanner s = new Scanner(System.in);
+            String inputStr = s.nextLine().replaceAll("\\s+","").toLowerCase();
+            if ( exitString.equals(inputStr)) {
+                System.out.println(exitingString);
+                System.exit(0);
+            }
+        }
     }
 }
